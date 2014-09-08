@@ -13,11 +13,13 @@ public class Main {
 
 		Chop3 chopper = new Chop3();
 		List<Integer> list = new ArrayList<Integer>();
-		for (int i = 1; i < 100; i++)
+		for (int i = 1; i < 100; i++) {
 			list.add(i);
-		for (int i = 0; i < 101; i++)
+		}
+		for (int i = 0; i < 101; i++) {
 			chopper.chop(i, list);
-		
+		}
+
 	}
 
 }
