@@ -20,9 +20,7 @@ public class Chop1 implements Chop {
 		if (input.get(0).compareTo(target) == 0) {
 			return 0;
 		}
-		{
-			return -1;
-		}
+		return -1;
 	}
 
 	private Integer calculateLocalPosition(Integer middle, Integer position) {
@@ -42,9 +40,7 @@ public class Chop1 implements Chop {
 		if (min > -1) {
 			return min;
 		}
-		{
-			return -1;
-		}
+		return -1;
 	}
 
 	private Integer minPosition(Integer a, Integer b) {

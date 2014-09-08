@@ -6,8 +6,9 @@ public class Chop3 implements Chop {
 
 	public Integer chop(Integer target, List<Integer> input) {
 		try {
-			if (input.isEmpty())
+			if (input.isEmpty()) {
 				return -1;
+			}
 		} catch (NullPointerException e) {
 			return -1;
 		}
@@ -17,8 +18,9 @@ public class Chop3 implements Chop {
 		int middle = 0;
 		while (front < back) {
 			middle = (front + back) / 2;
-			if (input.get(middle) == target)
+			if (input.get(middle) == target) {
 				return middle;
+			}
 			if (input.get(middle) > target) {
 				back = middle;
 
