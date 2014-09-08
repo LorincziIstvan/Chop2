@@ -15,8 +15,9 @@ public class Chop2 implements Chop {
 	public boolean notEmptyList(List<Integer> input) {
 		try {
 
-			if (!input.isEmpty())
+			if (!input.isEmpty()) {
 				return true;
+			}
 			return false;
 		} catch (NullPointerException e) {
 			return false;
@@ -48,7 +49,8 @@ public class Chop2 implements Chop {
 
 			}
 			return -1;
-		} else
+		} else {
 			return -1;
+		}
 	}
 }
