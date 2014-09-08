@@ -3,6 +3,7 @@ package edu.msg.chop2.test;
 import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.junit.Test;
 
@@ -10,10 +11,9 @@ import edu.msg.chop2.chopchop.Chop;
 import edu.msg.chop2.chopchop.Chop1;
 
 public class ChopTest {
-	private ArrayList<Integer> input;
+	private List<Integer> input;
 	private Chop chopper = new Chop1();
 
-	// bundle1
 
 	@Test
 	public void testChopCase1() {
@@ -52,7 +52,6 @@ public class ChopTest {
 		assertEquals(firstInt, secondInt);
 	}
 
-	// //bundle2
 	
 	@Test
 	public void testChopCase5() {
@@ -71,14 +70,14 @@ public class ChopTest {
 		assertEquals(-1, secondInt);
 		secondInt = chopper.chop(2, input);
 		assertEquals(-1, secondInt);
-//		secondInt = chopper.chop(4, input);
-//		assertEquals(-1, secondInt);
-//		secondInt = chopper.chop(6, input);
-//		assertEquals(-1, secondInt);
+		secondInt = chopper.chop(4, input);
+		assertEquals(-1, secondInt);
+		secondInt = chopper.chop(6, input);
+		assertEquals(-1, secondInt);
 		
 	}
 	
-	//@Test
+	@Test
 	public void testChopCase6() {
 		this.input = new ArrayList<Integer>();
 		input.add(1);

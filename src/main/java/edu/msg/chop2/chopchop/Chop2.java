@@ -15,7 +15,7 @@ public class Chop2 implements Chop {
 	public boolean notEmptyList(List<Integer> input) {
 		try {
 
-			if (input.size() > 0)
+			if (!input.isEmpty())
 				return true;
 			else
 				return false;

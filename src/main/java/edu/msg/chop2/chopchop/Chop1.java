@@ -36,9 +36,9 @@ public class Chop1 implements Chop {
 	private Integer calculatePosition(Integer middle, Integer position1,
 			Integer position2) {
 
-		position1 = calculateLocalPosition(0, position1);
-		position2 = calculateLocalPosition(middle, position2);
-		int min = minPosition(position1, position2);
+		int position1Second = calculateLocalPosition(0, position1);
+		int position2Second = calculateLocalPosition(middle, position2);
+		int min = minPosition(position1Second, position2Second);
 		if (min > -1) {
 			return min;
 		}
@@ -47,13 +47,13 @@ public class Chop1 implements Chop {
 
 	private Integer minPosition(Integer a, Integer b) {
 		if (a > -1) {
-			if ((b > -1)) {
+			if (b > -1) {
 				return Math.min(a, b);
 			} else {
 				return a;
 			}
 		} else {
-			if ((b > -1)) {
+			if (b > -1) {
 				return b;
 			} else {
 				return -1;
@@ -64,7 +64,7 @@ public class Chop1 implements Chop {
 	public boolean notEmptyList(List<Integer> input) {
 		try {
 
-			if (input.size() > 0)
+			if (!input.isEmpty())
 				return true;
 			else
 				return false;
