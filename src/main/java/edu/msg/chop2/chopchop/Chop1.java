@@ -5,12 +5,7 @@ import java.util.List;
 public class Chop1 implements Chop {
 
 	private boolean isAtomic(List<Integer> input) {
-		if (input.size() == 1) {
-			return true;
-		}
-		{
-			return false;
-		}
+		return input.size() == 1;
 	}
 
 	private int getMiddlePosition(List<Integer> input) {
@@ -22,17 +17,18 @@ public class Chop1 implements Chop {
 	}
 
 	private Integer targetFound(Integer target, List<Integer> input) {
-		if (input.get(0).compareTo(target) == 0)
+		if (input.get(0).compareTo(target) == 0) {
 			return 0;
+		}
 		{
 			return -1;
 		}
 	}
 
 	private Integer calculateLocalPosition(Integer middle, Integer position) {
-		if (position > -1)
+		if (position > -1) {
 			return middle + position;
-		else {
+		} else {
 			return -1;
 		}
 	}
@@ -69,13 +65,7 @@ public class Chop1 implements Chop {
 
 	public boolean notEmptyList(List<Integer> input) {
 		try {
-
-			if (!input.isEmpty()) {
-				return true;
-			}
-			{
-				return false;
-			}
+			return !input.isEmpty();
 		} catch (NullPointerException e) {
 			return false;
 		}
