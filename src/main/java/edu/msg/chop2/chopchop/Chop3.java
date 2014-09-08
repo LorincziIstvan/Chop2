@@ -14,21 +14,20 @@ public class Chop3 implements Chop {
 
 		int front = 0;
 		int back = input.size();
-		int middle=0;
+		int middle = 0;
 		while (front < back) {
-			 middle = (front + back) / 2;
+			middle = (front + back) / 2;
 			if (input.get(middle) == target)
 				return middle;
 			if (input.get(middle) > target) {
 				back = middle;
-		
+
 			} else {
-				front = middle+1;
+				front = middle + 1;
 			}
 
 		}
 		return -1;
 	}
-
 
 }

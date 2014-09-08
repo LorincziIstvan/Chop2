@@ -14,7 +14,6 @@ public class ChopTest {
 	private List<Integer> input;
 	private Chop chopper = new Chop1();
 
-
 	@Test
 	public void testChopCase1() {
 		this.input = new ArrayList<Integer>();
@@ -42,7 +41,6 @@ public class ChopTest {
 		assertEquals(firstInt, secondInt);
 	}
 
-	
 	@Test
 	public void testChopCase4() {
 		this.input = new ArrayList<Integer>();
@@ -52,7 +50,6 @@ public class ChopTest {
 		assertEquals(firstInt, secondInt);
 	}
 
-	
 	@Test
 	public void testChopCase5() {
 		this.input = new ArrayList<Integer>();
@@ -65,7 +62,7 @@ public class ChopTest {
 		assertEquals(1, secondInt);
 		secondInt = chopper.chop(5, input);
 		assertEquals(2, secondInt);
-		
+
 		secondInt = chopper.chop(0, input);
 		assertEquals(-1, secondInt);
 		secondInt = chopper.chop(2, input);
@@ -74,9 +71,9 @@ public class ChopTest {
 		assertEquals(-1, secondInt);
 		secondInt = chopper.chop(6, input);
 		assertEquals(-1, secondInt);
-		
+
 	}
-	
+
 	@Test
 	public void testChopCase6() {
 		this.input = new ArrayList<Integer>();
@@ -92,7 +89,7 @@ public class ChopTest {
 		assertEquals(2, secondInt);
 		secondInt = chopper.chop(7, input);
 		assertEquals(3, secondInt);
-		
+
 		secondInt = chopper.chop(0, input);
 		assertEquals(-1, secondInt);
 		secondInt = chopper.chop(2, input);
@@ -103,11 +100,7 @@ public class ChopTest {
 		assertEquals(-1, secondInt);
 		secondInt = chopper.chop(8, input);
 		assertEquals(-1, secondInt);
-		
-	}
-	
-	
-	
 
+	}
 
 }

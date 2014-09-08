@@ -17,7 +17,7 @@ public class Chop2 implements Chop {
 
 			if (!input.isEmpty())
 				return true;
-				return false;
+			return false;
 		} catch (NullPointerException e) {
 			return false;
 		}
@@ -40,7 +40,7 @@ public class Chop2 implements Chop {
 					int position = chop(target,
 							input.subList(middlePosition + 1, input.size()));
 					if (position > -1) {
-						return middlePosition + position+1;
+						return middlePosition + position + 1;
 					} else {
 						return -1;
 					}
