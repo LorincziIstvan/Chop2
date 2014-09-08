@@ -17,7 +17,6 @@ public class Chop2 implements Chop {
 
 			if (!input.isEmpty())
 				return true;
-			else
 				return false;
 		} catch (NullPointerException e) {
 			return false;

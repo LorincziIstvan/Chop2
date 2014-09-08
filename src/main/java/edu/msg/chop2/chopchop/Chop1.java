@@ -7,7 +7,6 @@ public class Chop1 implements Chop {
 	private boolean isAtomic(List<Integer> input) {
 		if (input.size() == 1)
 			return true;
-		else
 			return false;
 	}
 
@@ -22,7 +21,6 @@ public class Chop1 implements Chop {
 	private Integer targetFound(Integer target, List<Integer> input) {
 		if (input.get(0).compareTo(target) == 0)
 			return 0;
-		else
 			return -1;
 	}
 
