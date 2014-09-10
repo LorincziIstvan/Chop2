@@ -8,11 +8,11 @@ import java.util.List;
 import org.junit.Test;
 
 import edu.msg.chop2.chopchop.Chop;
-import edu.msg.chop2.chopchop.Chop1;
+import edu.msg.chop2.chopchop.Chop3;
 
-public class ChopTest {
+public class Chop3Test {
 	private List<Integer> input;
-	private Chop chopper = new Chop1();
+	private Chop chopper = new Chop3();
 
 	@Test
 	public void testChopCase1() {
