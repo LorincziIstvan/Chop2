@@ -18,7 +18,7 @@ public class Chop3 implements Chop {
 		int middle = 0;
 		while (front < back) {
 			middle = (front + back) / 2;
-			if (input.get(middle) == target) {
+			if (input.get(middle).equals(target)) {
 				return middle;
 			}
 			if (input.get(middle) > target) {
