@@ -7,6 +7,6 @@ import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
 @SuiteClasses({ ChopTest.class })
-public class TestSuit {
+public class TestSuite {
 
 }
